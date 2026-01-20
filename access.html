@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Access | CyberVedMitra</title>
+  <link rel="stylesheet" href="access.css" />
+</head>
+<body>
+
+  <div class="auth-wrapper">
+
+    <!-- SELECTION PANEL -->
+    <div class="choice-panel" id="choicePanel">
+      <div class="choice-card" onclick="openLogin()">
+        <h2>RETURNING AGENT(LOGIN)</h2>
+        <p>Access your secure terminal</p>
+        <button>LOGIN</button>
+      </div>
+
+      <div class="choice-card" onclick="openSignup()">
+        <h2>NEW RECRUIT(SIGNUP)</h2>
+        <p>Begin your cyber defense training</p>
+        <button>SIGN UP</button>
+      </div>
+    </div>
+
+    <!-- LOGIN PANEL -->
+    <div class="form hidden" id="loginForm">
+
+      <button class="back-btn" onclick="goHome()">← Back to Home</button>
+
+      <label>&gt; Login Method</label>
+      <select>
+        <option>Email + Password</option>
+        <option>Mobile / Email + OTP</option>
+        <option>Username + Password</option>
+      </select>
+
+      <label>&gt; Identifier</label>
+      <input type="text" placeholder="Email / Username / Mobile">
+
+      <label>&gt; Secret</label>
+      <input type="password" placeholder="Password or OTP">
+
+      <button class="action-btn" onclick="simulateLogin()">AUTHENTICATE</button>
+      <p class="status" id="loginStatus"></p>
+    </div>
+
+    <!-- SIGNUP PANEL -->
+    <div class="form hidden" id="signupForm">
+
+      <button class="back-btn" onclick="goHome()">← Back to Home</button>
+
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+      <input type="text" placeholder="Mobile Number">
+      <input type="password" placeholder="Create Password">
+
+      <button class="action-btn" onclick="simulateSignup()">INITIATE MISSION</button>
+
+      <div class="divider">OR SIGN UP WITH</div>
+
+      <div class="social-buttons">
+        <button class="social google">Google</button>
+        <button class="social linkedin">LinkedIn</button>
+      </div>
+
+      <p class="status" id="signupStatus"></p>
+    </div>
+
+  </div>
+
+  <script src="access.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* ===== LEARN PAGE ===== */
+
+.learn-hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f1f5f9;
+}
+
+.learn-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+}
+
+.learn-hero p {
+  max-width: 720px;
+  margin: auto;
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+/* Learning paths */
+.learn-paths {
+  padding: 70px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.learn-paths h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.path-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.path-card {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.path-card h3 {
+  margin-bottom: 12px;
+  color: #16a34a;
+}
+
+.path-card p {
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.path-card button {
+  padding: 10px 18px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.path-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}

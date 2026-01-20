@@ -1,0 +1,538 @@
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: linear-gradient(90deg, #0b1f33, #003366);
+  border-bottom: 1px solid #0f2a44;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #22c55e;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation */
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #f8fafc;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Nav hover underline */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #22c55e;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== HEADER ACTION BUTTONS ===== */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Login */
+.btn-login {
+  padding: 6px 18px;
+  background-color: #e6f9f0;
+  color: #16a34a;
+  border: 1.5px solid #16a34a;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.btn-login:hover {
+  background-color: #16a34a;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(22, 163, 74, 0.4);
+}
+
+/* Signup */
+.btn-signup {
+  padding: 7px 20px;
+  background-color: #22c55e;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.btn-signup:hover {
+  background-color: #16a34a;
+  box-shadow: 0 0 12px rgba(22, 163, 74, 0.6);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  min-height: 80vh;
+  padding: 80px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f5f5f7;
+  background-color: #102a44;
+
+}
+
+/* ===== ABOUT ===== */
+.about {
+  padding: 70px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.about p {
+  max-width: 760px;
+  margin: auto;
+  font-size: 1.05rem;
+  color: #475569;
+}
+
+/* About button */
+.about-btn {
+  margin-top: 28px;
+  padding: 12px 28px;
+  background-color: #22c55e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.about-btn:hover {
+  background-color: #16a34a;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #0b1f33;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.85rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ===== CONTACT SECTION ===== */
+.contact {
+  padding: 70px 20px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.contact p {
+  max-width: 720px;
+  margin: auto;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.contact-info p {
+  font-size: 0.95rem;
+  color: #334155;
+}
+/* ===== FAQ SECTION ===== */
+.faq {
+  padding: 70px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: #f8fafc;
+  padding: 20px 24px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.faq-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: #16a34a;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+/* ===== WATCH SECTION ===== */
+.watch-section {
+  padding: 70px 20px;
+  background: #0b1f33;
+  color: #e5f2ff;
+  text-align: center;
+}
+
+.watch-card {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #102a44;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.watch-card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.watch-card li {
+  margin-bottom: 10px;
+}
+
+.watch-card button {
+  padding: 10px 20px;
+  background: #22c55e;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.watch-warning {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #9fdcff;
+}
+/* ===== CHALLENGE ===== */
+.challenge-section {
+  padding: 70px 20px;
+  text-align: center;
+  background: #f8fafc;
+}
+
+.challenge-options button {
+  margin: 10px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+/* ===== SCORE ===== */
+.score-section {
+  padding: 70px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+.score-card {
+  max-width: 400px;
+  margin: auto;
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 12px;
+}
+.score-card h3 {
+  margin-bottom: 12px;
+  color: #16a34a;
+}   
+.btn-hero {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #22c55e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+/* =========================================
+   ABOUT SECTION – AUTHENTIC NEWSPAPER STYLE
+========================================= */
+
+.about-newspaper {
+  background: #f7f4ee; /* aged paper tone */
+  padding: 90px 20px;
+  color: #111;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* Newspaper page */
+.newspaper-container {
+  max-width: 1150px;
+  margin: auto;
+  background: #fffdf8;
+  padding: 50px 60px;
+  box-shadow:
+    0 0 0 1px #000,
+    0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* =====================
+   MASTHEAD
+===================== */
+.paper-header {
+  text-align: center;
+  border-bottom: 4px double #000;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.paper-header h1 {
+  font-size: 3.4rem;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.paper-header p {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  color: #333;
+}
+
+/* =====================
+   HEADLINE
+===================== */
+.paper-headline h2 {
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.headline-sub {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* =====================
+   HERO IMAGE PLACEHOLDER
+===================== */
+.paper-hero {
+  margin: 35px 0;
+  height: 280px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ddd,
+    #ddd 10px,
+    #eaeaea 10px,
+    #eaeaea 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #333;
+  border: 1px solid #000;
+}
+
+/* =====================
+   BYLINE
+===================== */
+.paper-byline {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-bottom: 35px;
+  color: #222;
+}
+
+/* =====================
+   ARTICLE COLUMNS
+===================== */
+.paper-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.paper-columns article h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.paper-columns article p::first-letter {
+  float: left;
+  font-size: 3rem;
+  line-height: 1;
+  padding-right: 8px;
+  font-weight: bold;
+}
+
+/* =====================
+   INFO GRID (BOXED)
+===================== */
+.paper-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.info-box {
+  border: 2px solid #000;
+  padding: 18px;
+  font-size: 0.9rem;
+}
+
+.info-box h4 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.info-box ul {
+  padding-left: 18px;
+}
+
+.info-box li {
+  margin-bottom: 6px;
+}
+
+/* Pull Quote */
+.quote-box blockquote {
+  font-style: italic;
+  font-size: 1rem;
+  margin: 15px 0;
+  border-left: 4px solid #000;
+  padding-left: 12px;
+}
+
+.quote-box cite {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 6px;
+  text-align: right;
+}
+
+/* =====================
+   FOOTER STRIP
+===================== */
+.paper-footer-strip {
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 3px double #000;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 1000px) {
+  .paper-columns,
+  .paper-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newspaper-container {
+    padding: 30px;
+  }
+
+  .paper-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .paper-headline h2 {
+    font-size: 2rem;
+  }
+
+  .paper-footer-strip {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.logout-btn {
+  background: #ff3b3b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.logout-btn:hover {
+  background: #e60000;
+}

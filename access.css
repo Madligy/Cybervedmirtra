@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b1f33, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Wrapper */
+.auth-wrapper {
+  width: 90%;
+  max-width: 1100px;
+}
+
+/* Choice panel */
+.choice-panel {
+  display: flex;
+  gap: 20px;
+}
+
+/* Cards */
+.choice-card {
+  flex: 1;
+  background: linear-gradient(135deg, #003a2a, #006b4a);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.choice-card:last-child {
+  background: linear-gradient(135deg, #4b0055, #7a008c);
+}
+
+.choice-card:hover {
+  transform: scale(1.05);
+}
+
+.choice-card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.choice-card button {
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Forms */
+.form {
+  margin-top: 20px;
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.form input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 12px;
+  background: #22c55e;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #e0f2fe;
+}
+
+/* Back button */
+.back-btn {
+  background: transparent;
+  border: none;
+  color: #a5f3fc;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 0.75rem;
+  color: #ddd;
+}
+
+/* Social buttons */
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.google {
+  background: #fff;
+  color: #000;
+}
+
+.linkedin {
+  background: #0a66c2;
+  color: #fff;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .choice-panel {
+    flex-direction: column;
+  }
+}
