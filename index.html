@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CyberVedMitra | Free Cybersecurity Learning Platform</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+
+      <!-- Logo -->
+      <div class="logo">CyberVedMitra</div>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="labs.html">Labs</a>
+        <a href="resources.html">Resources</a>
+        <a href="index.html#about" class="about-link">About</a>
+        <a href="awareness.html" class="awareness-link">Awareness</a>
+        <a href="index.html" class="contact-link">Contact Us</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="actions" id="authActions">
+        <a href="auth/access.html" class="btn-login">Login</a>
+        <a href="auth/access.html" class="btn-signup">Sign Up</a>
+      </div>
+<button id="logoutBtn" type="button" class="logout-btn" >
+  Logout
+</button>
+    </div>
+  </header>
+
+  <!-- ===== ARE YOU BEING WATCHED ===== -->
+<section class="watch-section" id="watch">
+  <h2>Are You Being Watched? 👀</h2>
+
+  <p class="watch-intro">
+    We can detect some information about you in just a few seconds.
+    This is what websites can see — without hacking.
+  </p>
+
+  <div class="watch-card">
+    <ul id="watchData">
+      <li>📍 Location: <span>Detecting...</span></li>
+      <li>💻 Device: <span>Detecting...</span></li>
+      <li>🌐 Browser: <span>Detecting...</span></li>
+    </ul>
+
+    <button id="revealBtn">Reveal What We See</button>
+
+    <p class="watch-warning" id="watchWarning">
+      We detected this safely. Hackers try to find much more.
+    </p>
+  </div>
+</section>
+<!-- ===== HERO SECTION ===== -->
+
+<section class="hero">
+    <h1>
+      Learn cybersecurity the <span>safe & friendly way</span>
+    </h1>
+    <p>
+      CyberVedMitra is a free learning platform designed for school students
+      to understand cybersecurity using simple explanations, real-world examples,
+      and guided virtual labs.
+    </p>
+    <h1>Explore. Learn. Stay Safe.</h1>
+    <h1>Your Cyber Journey Starts Here.</h1>
+    <a href="learn.html" class="btn-hero">Get Started</a>
+  </section>
+<!-- ===== HACK CHALLENGE ===== -->
+<section class="challenge-section">
+  <h2>Hack Challenge of the Day 🧠</h2>
+
+  <p>
+    Which password is the strongest?
+  </p>
+
+  <div class="challenge-options">
+    <button data-answer="false">password123</button>
+    <button data-answer="false">rahul2008</button>
+    <button data-answer="true">R@8uL!92#</button>
+  </div>
+
+  <p id="challengeResult"></p>
+</section>
+<!-- ===== CYBER SAFETY SCORE ===== -->
+<section class="score-section">
+  <h2>Your Cyber Safety Score 🔐</h2>
+
+  <p>Do you use the same password everywhere?</p>
+
+  <button onclick="setScore(0)">Yes</button>
+  <button onclick="setScore(20)">No</button>
+
+  <p id="scoreResult"></p>
+</section>
+
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <!-- ===== ABOUT SECTION : NEWSPAPER STYLE ===== -->
+<section id="about" class="about-newspaper">
+
+  <div class="newspaper-container">
+
+    <!-- Masthead -->
+    <header class="paper-header">
+        <h1>ABOUT</h1>
+      <h1>THE CYBER GUARDIAN TIMES</h1>
+      <p>Est. 2024 | Digital Security News</p>
+    </header>
+
+    <hr class="paper-divider" />
+
+    <!-- Headline -->
+    <section class="paper-headline">
+      <h2>BREAKING: New Academy Fights Cyber Threats with Student Army</h2>
+      <p class="headline-sub">
+        Empowering the next generation with cybersecurity awareness and skills
+      </p>
+    </section>
+
+    <!-- Hero Image Placeholder -->
+    <div class="paper-hero">
+      <p>[ Front Page Feature Image ]</p>
+    </div>
+
+    <!-- Byline -->
+    <p class="paper-byline">
+      By Staff Reporter | CyberVedMitra HQ
+    </p>
+
+    <!-- Columns -->
+    <section class="paper-columns">
+
+      <article>
+        <h3>Our Story</h3>
+        <p>
+          CyberVedMitra was founded to address the growing cyber risks faced
+          by school students. As digital usage increased, so did scams,
+          hacking, and online manipulation.
+        </p>
+      </article>
+
+      <article>
+        <h3>Our Mission</h3>
+        <p>
+          To educate students in Grades 7–10 with simple explanations,
+          interactive labs, and real-world cybersecurity awareness—completely
+          free and accessible.
+        </p>
+      </article>
+
+      <article>
+        <h3>Our Vision</h3>
+        <p>
+          A future where every student understands how to protect themselves
+          online and becomes a responsible digital citizen.
+        </p>
+      </article>
+
+    </section>
+
+    <hr class="paper-divider" />
+
+    <!-- Info Grid -->
+    <section class="paper-info-grid">
+
+      <div class="info-box">
+        <h4>STATISTICS</h4>
+        <ul>
+          <li>10,000+ Students Impacted</li>
+          <li>5 Languages Supported</li>
+          <li>100% Free Platform</li>
+        </ul>
+      </div>
+
+      <div class="info-box quote-box">
+        <h4>QUOTES</h4>
+        <blockquote>
+          “CyberVedMitra made cybersecurity easy to understand.”
+        </blockquote>
+        <cite>— Student Learner</cite>
+      </div>
+
+      <div class="info-box">
+        <h4>TEAM</h4>
+        <p>
+          Educators, engineers, and security enthusiasts working together
+          to build a safer digital future.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- Fun Footer Strip -->
+    <section class="paper-footer-strip">
+      <p>☁ Cyber Weather: Threat Level — MODERATE</p>
+      <p>📈 Security Index: +12% Awareness Growth</p>
+    </section>
+
+  </div>
+</section>
+
+  <!-- ===== FAQ SECTION ===== -->
+<section class="faq" id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <h3>Is CyberVedMitra free to use?</h3>
+      <p>
+        Yes. CyberVedMitra is completely free and built for school students
+        to learn cybersecurity safely.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do I need prior technical knowledge?</h3>
+      <p>
+        No prior knowledge is required. Lessons start from basics
+        and explain concepts step by step.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is this platform safe for students?</h3>
+      <p>
+        Yes. All content and labs are designed for awareness and ethical learning.
+        No real hacking or harmful activities are included.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Which classes is this platform for?</h3>
+      <p>
+        CyberVedMitra is mainly designed for students from Grades 7 to 10.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Will certificates be provided?</h3>
+      <p>
+        Certificates may be provided after completing learning modules
+        and activities in the future.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Contact us ===== -->
+ <!-- ===== CONTACT SECTION ===== -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+
+  <p>
+    Have questions, suggestions, or need help?
+    We’re here to support students, teachers, and parents.
+  </p>
+
+  <div class="contact-info">
+    <p><strong>Email:</strong> support@cybervedmitra.org</p>
+    <p><strong>Purpose:</strong> Educational & student support only</p>
+  </div>
+</section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 CyberVedMitra • Free & Educational Platform</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
